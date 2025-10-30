@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 31.96 s <<< FAILURE! -- in TestSuite
+com.Gmail.Runner.TestRunner2.runScenario["Login with correct username and correct password", "Store login"](2) -- Time elapsed: 5.966 s <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'LIN-5CD5329NV1', ip: '10.51.243.238'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:89)
+	at com.Gmail.Users.config.Base.launchBrowser(Base.java:22)
+	at com.Gmail.Users.StepDef.Hooks.beforeScenario(Hooks.java:37)
+
